@@ -3,18 +3,18 @@ import { Student } from './Student'
 
 
 
-const ListOfStudents = ({list}) => {
+
+const ListOfStudents = ({list, onDelete}) => {
   return (
     <>
-  {list.map((student, index) => <div key={index}>
-    <Student student={student} onDelete={deleteStudentFromList}/>
+  {list.map((student, index) => 
+  <div key={index}>
+    <Student student={student} onDelete={onDelete}/>
   </div>)}
     </>
   )
 }
 
-const deleteStudentFromList = (id) =>{
-  setList(list.filter((index)=>{ index !== id}));
-}
+
 
 export default ListOfStudents
