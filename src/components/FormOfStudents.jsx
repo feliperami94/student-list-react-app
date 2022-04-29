@@ -39,7 +39,7 @@ const FormOfStudents = () => {
         <label>Last name</label>
         <input onChange={addLastName}  type="text" name="lastName" />
         <button className='btn' onClick={onAddStudent}>add student</button>
-        <ListOfStudents list={list}/>
+        <ListOfStudents list={list} />
       </form>
     </div>
   )

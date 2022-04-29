@@ -6,6 +6,5 @@ export const Student = ({student, onDelete}) => {
       <div className='student'>
         <h3>{student.name} {student.lastName} <AiOutlineCloseCircle style={{color:'RED'}}/></h3>
       </div>
-    
   )
 }
